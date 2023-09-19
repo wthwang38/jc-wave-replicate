@@ -1,0 +1,13 @@
+.hero-layout {
+    grid-column-gap: 3rem;
+    grid-row-gap: 0px;
+    object-fit: fill;
+    grid-template-rows: auto auto auto auto minmax(auto, auto);
+    grid-template-columns: 5.5fr 6fr;
+    grid-auto-columns: 1fr;
+    align-content: start;
+    align-items: flex-start;
+    justify-items: start;
+    display: grid;
+    position: static;
+}
