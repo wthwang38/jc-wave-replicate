@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 
 const NavigationBar = () => {
   return (
-    <Navbar expand='lg'>
+    <Navbar expand='lg' className="bg-body-tertiary" sticky="top">
         <Navbar.Brand href='#home'><img alt='logo' src='/vite.svg' width='30' height='30' className='d-inline-block align-top'/>Johnny's Site
         </Navbar.Brand>
         <Navbar.Toggle/>
