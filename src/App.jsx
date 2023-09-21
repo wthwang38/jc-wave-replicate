@@ -16,7 +16,7 @@ function App() {
         <div className='p-2'><h1>Manage Your Money like a Boss</h1></div>
         <div className='p-2'><HeroPage /></div>
         <div className='container-md'><CustomerVid /></div>
-        <Container><Features /></Container>
+        <div className='mx-auto p-2'><Features /></div>
         <div className='p-2'><Pricing /></div >
       </Stack>
     </>

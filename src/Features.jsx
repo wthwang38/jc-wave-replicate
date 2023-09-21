@@ -1,6 +1,9 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 const Features = ()=>{
 /*
 contains features of the site
@@ -17,20 +20,17 @@ brings to the specific feature
                     Nothing you don't.
                 </h2>
             </Container>
-            <Carousel >
-                <Carousel.Item>
-                    <h3>Invoicing</h3>
-                    <p>Stop chasing clients for money</p>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <h3>Payments</h3>
-                    <p>Get paid faster</p>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <h3>Accounting</h3>
-                    <p>Track your income & expenses, painlessly</p>
-                </Carousel.Item>
-            </Carousel>
+            <Navbar justify>
+                <Container>
+                    <Row>
+                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Invoicing</Button></Col>
+                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Payments</Button></Col>
+                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Accounting</Button></Col>
+                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Payroll</Button></Col>
+                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Advisors</Button></Col>
+                    </Row>
+                </Container>
+            </Navbar>
         </>
     )
 }
