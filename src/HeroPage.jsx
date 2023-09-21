@@ -13,12 +13,12 @@ log-in/Auth
     return(
         <Container fluid>
             <Row>
+                <Col><Login /></Col>
                 <Col>
                 <img alt='happyman'  src='/whitemanpic.webp' className='container-md'/>
                     <p style={{ textAlign: 'center' }}>
                         Create beautiful invoices, accept online payments, and make accounting easy-all in one place-with Johnny's suite of money tools
                     </p></Col>
-                <Col><Login /></Col>
             </Row>
         </Container >
     )

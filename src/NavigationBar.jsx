@@ -1,20 +1,21 @@
 import React from 'react'
-//import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-//import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const NavigationBar = () => {
   return (
-    <Navbar expand='lg' className='bg-body-tertiary'>
-      <Container>
+    <Navbar expand='lg'>
         <Navbar.Brand href='#home'><img alt='logo' src='/vite.svg' width='30' height='30' className='d-inline-block align-top'/>Johnny's Site
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
+        <Navbar.Toggle/>
+        <Navbar.Collapse className="justify-content-end">
+        <Container>
+        <Nav className="justify-content-end">
             <NavDropdown title='Features' id='basic-nav-dropdown'>
               <NavDropdown.Item href='#invoicing'>Invoicing</NavDropdown.Item>
               <NavDropdown.Item href='#payments'>Payments</NavDropdown.Item>
@@ -30,9 +31,11 @@ const NavigationBar = () => {
               <NavDropdown.Item href='#howitworks'>How Support Works</NavDropdown.Item>
               <NavDropdown.Item href='#affiliates'>Become an Affiliate</NavDropdown.Item>
             </NavDropdown>
+            <Button variant='outline-light' size='sm' style={{ borderRadius: '2rem', color:'black', borderColor:'black'}}> Sign in </Button>
+            <Button size='sm' style={{ borderRadius: '2rem' }}> Sign up for free </Button>
           </Nav>
+        </Container>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
   );
 }

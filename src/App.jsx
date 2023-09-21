@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       <NavigationBar/>
-      <Stack gap={3}>
+      <Stack gap={1}>
         <div className='p-2'><h1>Manage Your Money like a Boss</h1></div>
         <div className='p-2'><HeroPage /></div>
-        <div className='container-md'><CustomerVid /></div>
-        <div className='mx-auto p-2'><Features /></div>
+        <div><CustomerVid /></div>
+        <div><Features /></div>
         <div className='p-2'><Pricing /></div >
       </Stack>
     </>

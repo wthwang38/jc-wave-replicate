@@ -11,7 +11,7 @@ buttons: Invoicing, Accounting, Payments, Payroll, Advisors
 brings to the specific feature
 */
     return (
-        <>
+        <div style={{backgroundColor:"pink"}}>
             <Container>
                 <h2 style={{textAlign:'center'}}>
                     Everything you need.
@@ -20,18 +20,18 @@ brings to the specific feature
                     Nothing you don't.
                 </h2>
             </Container>
-            <Navbar justify>
-                <Container>
+            <Navbar>
+                <Container className='justify-content-center'>
                     <Row>
-                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Invoicing</Button></Col>
-                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Payments</Button></Col>
-                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Accounting</Button></Col>
-                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Payroll</Button></Col>
-                        <Col><Button size='lg' style={{ borderRadius: '2rem' }}>Advisors</Button></Col>
+                        <Col><Button variant='outline-light' size='sm' style={{borderColor:'black', color:'black', borderRadius: '2rem' }}>Invoicing</Button></Col>
+                        <Col><Button variant='outline-light' size='sm' style={{borderColor:'black', color:'black', borderRadius: '2rem' }}>Payments</Button></Col>
+                        <Col><Button variant='outline-light' size='sm' style={{borderColor:'black', color:'black', borderRadius: '2rem' }}>Accounting</Button></Col>
+                        <Col><Button variant='outline-light' size='sm' style={{borderColor:'black', color:'black', borderRadius: '2rem' }}>Payroll</Button></Col>
+                        <Col><Button variant='outline-light' size='sm' style={{borderColor:'black', color:'black', borderRadius: '2rem' }}>Advisors</Button></Col>
                     </Row>
                 </Container>
             </Navbar>
-        </>
+        </div>
     )
 }
 

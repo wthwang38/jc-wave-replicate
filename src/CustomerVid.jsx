@@ -7,12 +7,13 @@ a "video"
 */
     return(
         <>
+            <Container style={{ backgroundColor: '#00008b', color: 'white' }}>
             <div className='container-sm w-75'>
                 <Card >
                     <img src='Youtubevidcdemo.webp' alt='youtube Demo' />
                 </Card>
             </div>
-            <Container style={{backgroundColor:'#00008b', color:'white'}}>
+            
                 <h2>One Less Thing To Worry About</h2>
                 <ul>
                     <img/><p>A user-friendly dashboard built for you, not your accountant.</p>
