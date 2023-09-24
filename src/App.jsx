@@ -1,24 +1,39 @@
-
-import HeroPage from './HeroPage'
-import CustomerVid from './CustomerVid'
-import Features from './Features'
-import NavigationBar from './NavigationBar'
-import Pricing from './Pricing'
+import React from 'react';
+import NavigationBar from './NavigationBar';
+import FrontPage from './FrontPage';
+import About from './About';
+import Pricing from './Pricing';
+import Blog from './Blog';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Stack from 'react-bootstrap/Stack';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+let router = createBrowserRouter([
+  {
+    path:'/',
+    element: <FrontPage/>,
+    children:[
+      {
+        path:'/about',
+        element: <About />,
+      },
+      {
+        path:'/pricing',
+        element: <Pricing />,
+      },
+      {
+        path:'/blog',
+        element: <Blog/>,
+      }
+    ],
+  },
+])
 function App() {
 
   return (
     <>
       <NavigationBar/>
-      <Stack gap={1}>
-        <div className='p-2'><h1>Manage Your Money like a Boss</h1></div>
-        <div className='p-2'><HeroPage /></div>
-        <div><CustomerVid /></div>
-        <div><Features /></div>
-        <div className='p-2'><Pricing /></div >
-      </Stack>
+      <RouterProvider router={router}/>
+      <Container><Outlet /></Container>
     </>
   )
 }

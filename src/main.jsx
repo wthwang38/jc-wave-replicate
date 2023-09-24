@@ -5,8 +5,6 @@ import SSRProvider from 'react-bootstrap/SSRProvider';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <SSRProvider>
       <App />
-    </SSRProvider>
   </React.StrictMode>,
 )
