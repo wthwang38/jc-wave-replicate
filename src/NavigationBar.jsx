@@ -19,14 +19,14 @@ const NavigationBar = () => {
               <NavDropdown.Item href='/accounting'>Accounting</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='/pricing'>Pricing</Nav.Link>
-            <Nav.Link href='/blog' to="/blog">Blog</Nav.Link>
+            <Nav.Link href='/blog'>Blog</Nav.Link>
             <NavDropdown title='Resources' id='basic-nav-dropdown'>
-              <NavDropdown.Item href='/about' to='/about'>About Us</NavDropdown.Item>
+              <NavDropdown.Item href='/about'>About Us</NavDropdown.Item>
               <NavDropdown.Item href='/helpcenter'>Help Center</NavDropdown.Item>
               <NavDropdown.Item href='/sitemap'>Site Map</NavDropdown.Item>
             </NavDropdown>
-            <Button variant='outline-light' size='sm' style={{ borderRadius: '2rem', color:'black', borderColor:'black'}}> Sign in </Button>
-            <Button size='sm' style={{ borderRadius: '2rem' }}> Sign up! </Button>
+            <Button variant='outline-light' size='sm' style={{ borderRadius: '2rem', color:'black', borderColor:'black'}} href='/signin'> Sign in </Button>
+            <Button size='sm' style={{ borderRadius: '2rem' }} href='signup'> Sign up! </Button>
           </Nav>
         </Container>
         </Navbar.Collapse>

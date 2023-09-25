@@ -8,6 +8,8 @@ import Rarity from './Rarity';
 import SiteMap from './SiteMap';
 import Accounting from './Accounting';
 import HelpCenter from './HelpCenter';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
@@ -43,6 +45,14 @@ let router = createBrowserRouter([
   {
     path: '/helpcenter',
     element: <HelpCenter />
+  },
+  {
+    path: '/signin',
+    element: <SignIn />,
+  },
+  {
+    path: '/signup',
+    element: <SignUp />,
   }
 ])
 function App() {
