@@ -8,8 +8,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavigationBar = () => {
   return (
-    <Navbar expand='lg' className="bg-body-tertiary" sticky="top">
-      <Container fluid>
+    <Navbar expand='lg' className="p-4 bg-body-tertiary" sticky="top">
+      <Container>
         <Navbar.Brand href='/'><img alt='logo' src='/vite.svg' width='30' height='30' className='d-inline-block align-top'/>BRAND NAME</Navbar.Brand>
         <Navbar.Toggle/>
         <Navbar.Collapse className="justify-content-end">

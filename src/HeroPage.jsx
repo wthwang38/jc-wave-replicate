@@ -12,13 +12,15 @@ log-in/Auth
 */
     return(
         <Container fluid>
-            <Row>
-                <Col><Login /></Col>
-                <Col>
-                <img alt='happyman'  src='/whitemanpic.webp' className='container-md'/>
-                    <p style={{ textAlign: 'center' }}>
+            <Row >
+                <Col className='p-2'>
+                   <h1 style={{ fontWeight: '400', fontSize: '3.25rem', lineHeight: '1.14', fontFamily:'Dinerodisplay, sans-serif' }}>Manage Your Money like a Boss</h1>
+                    <p>
                         Create beautiful invoices, accept online payments, and make accounting easy-all in one place-with Johnny's suite of money tools
-                    </p></Col>
+                    </p>
+                    <Login />
+                </Col>
+                <Col ><img alt='happyman'  src='/whitemanpic.webp' className='container-md'/></Col>
             </Row>
         </Container >
     )
