@@ -11,7 +11,7 @@ a picture
 log-in/Auth
 */
     return(
-        <Container fluid>
+        <Container style={{gridTemplateRow:"auto auto auto auto minmax(auto,auto)", gridAutoFlow:'row', paddingBottom:'3rem'}}>
             <Row >
                 <Col className='p-2'>
                    <h1 style={{ fontWeight: '400', fontSize: '3.25rem', lineHeight: '1.14', fontFamily:'Dinerodisplay, sans-serif' }}>Manage Your Money like a Boss</h1>

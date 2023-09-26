@@ -4,16 +4,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const NavigationBar = () => {
   return (
     <Navbar expand='lg' className="p-4 bg-body-tertiary" sticky="top">
       <Container>
-        <Navbar.Brand href='/'><img alt='logo' src='/vite.svg' width='30' height='30' className='d-inline-block align-top'/>BRAND NAME</Navbar.Brand>
+        <Navbar.Brand href='/'><img alt='logo' src='/vite.svg' width='150rem' height='50rem' className='d-inline-block align-top'/></Navbar.Brand>
         <Navbar.Toggle/>
         <Navbar.Collapse className="justify-content-end">
-        <Nav className="justify-content-end">
+          <Nav>
             <NavDropdown title='Features' id='basic-nav-dropdown'>
               <NavDropdown.Item href='/rarity'>Rarity</NavDropdown.Item>
               <NavDropdown.Item href='/accounting'>Accounting</NavDropdown.Item>
@@ -25,8 +26,16 @@ const NavigationBar = () => {
               <NavDropdown.Item href='/helpcenter'>Help Center</NavDropdown.Item>
               <NavDropdown.Item href='/sitemap'>Site Map</NavDropdown.Item>
             </NavDropdown>
-            <Button variant='outline-secondary' size='md'  href='/signin'> Sign in </Button>
-            <Button size='md' href='signup'> Sign up! </Button>
+            <Container>
+            <Row>
+              <Col>
+                  <Button variant='outline-secondary' size='md' href='/signin'> Sign in </Button>
+              </Col>
+              <Col xs={6}>
+                  <Button className=''size='md' href='signup' > Sign up! </Button>
+              </Col>
+            </Row>
+            </Container>
           </Nav>
         </Navbar.Collapse>
       </Container>
